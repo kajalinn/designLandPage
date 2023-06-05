@@ -6,55 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title></title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Kasutajaliidese disaini eksam">
+    <meta name="author" content="Nikita Kajalin">
 
 
     <link rel="icon" href="/favicon.ico">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- siia lisa bootstrap vms lingid -->
-    <link rel="stylesheet" href="stylesheets/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
 
 </head>
 
 <body>
 <header class="header">
+
+
+<!--    ready cookie-->
     <div class="cookie-notice">
-        <div class="container">
+        <div class="cookie-container">
             <div class="wrapper">
                 <div class="cookie-text">
                     <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus. <a href="" class="red">Vitae ullamcorper metus.</a></p>
                 </div>
                 <div class="cookie-btns">
-                    <a class="btn-red">Lorem ipsum</a>
-                    <a class="btn-red">Lorem ipsum</a>
+                    <a onclick="showOrHideDiv()" class="btn-red upperbtn">Lorem ipsum</a>
+                    <a onclick="showOrHideDiv()" class="btn-red">Lorem ipsum</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="header-upper">
-        <div class="container">
-            <a href="" class="logo">
-                <img src="assets/logo.svg" alt="">
-            </a>
-            <div class="header-upper-right">
-                <div class="dropdown lang-switch mobile">
-                    <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <p>ENG</p><img src="assets/arrow-down-white.svg" alt="">
-                    </a>
+<!--    ready cookie-->
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">ENG</a>
-                        <a class="dropdown-item" href="#">SWE</a>
-                    </div>
-                </div>
-                <img src="assets/burger.svg" alt="" class="burger mobile">
-                <img src="assets/close.svg" width="16" height="16" alt="" class="close-img mobile">
-            </div>
-        </div>
-    </div>
-    <div class="mob-menu mobile">
+
+
+
+<!--    mobile header upper-->
+<!--    <div class="header-upper">-->
+<!--        <div class="container">-->
+<!--            <a href="" class="logo">-->
+<!--                <img src="assets/logo.svg" alt="">-->
+<!--            </a>-->
+<!--            <div class="header-upper-right">-->
+<!--                <div class="dropdown lang-switch mobile">-->
+<!--                    <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                        <p>ENG</p><img src="assets/arrow-down-white.svg" alt="">-->
+<!--                    </a>-->
+
+<!--                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">-->
+<!--                        <a class="dropdown-item" href="#">ENG</a>-->
+<!--                        <a class="dropdown-item" href="#">SWE</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <img src="assets/burger.svg" alt="" class="burger mobile">-->
+<!--                <img src="assets/close.svg" width="16" height="16" alt="" class="close-img mobile">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!--    mobile header upper-->
+
+
+
+
+
+    <div id="mobile-menu" class="mob-menu mobile">
         <div class="header-search">
             <div class="search-bar">
                 <img src="assets/search-icon.svg" alt="">
@@ -94,65 +110,401 @@
             <li class="menu-item"><a>contact</a><img src="assets/plus.svg" alt=""><img class="minus-icon" src="assets/minus.svg"></li>
         </div>
     </div>
-    <hr>
+
+
+
+
+
+<!--    &lt;!&ndash; Start Navigation Bar &ndash;&gt;-->
+<!--    <div class="mobile-menu">-->
+<!--        <i class="fa fa-bars fa-3x js-menu-icon"></i>-->
+<!--    </div>-->
+<!--    <nav class="navbar js-navbar">-->
+<!--        <ul class="menu">-->
+<!--            <li>-->
+<!--                <a class="hasDropdown" href="#">Corporate Governance</a>-->
+
+<!--                <ul class="container">-->
+<!--                    <div class="container__list">-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Televisions</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Home Entertainment Systems</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Headphones</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Speakers</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>MP3, Media Players & Accessories</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Audio & Video Accessories</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Cameras</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>DSLR Cameras</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Camera Accessories</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Musical Instruments & Professional Audio</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Gaming Consoles</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div> All Electronics </div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Air Conditioners</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Refrigerators</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Washing Machines</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Kitchen & Home Appliances</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Heating & Cooling Appliances</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>All Appliances</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a class="hasDropdown" href="#">Appliances <i class="fa fa-angle-down"></i></a>-->
+<!--                <ul class="container has-multi">-->
+<!--                    <div class="container__list container__list-multi">-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Televisions</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Home Entertainment Systems</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Headphones</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Speakers</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>MP3, Media Players & Accessories</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Audio & Video Accessories</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Cameras</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>DSLR Cameras</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Camera Accessories</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Musical Instruments & Professional Audio</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Gaming Consoles</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div> All Electronics </div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Air Conditioners</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Refrigerators</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Washing Machines</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Kitchen & Home Appliances</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Heating & Cooling Appliances</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>All Appliances</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="container__list container__list-multi">-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Mobiles</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Laptops</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Mobile Accessories</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>PC Accessories</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Data Storage</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>PC Components</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Speakers</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Networking</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Printers and Ink</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Wearables</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Tablets</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div> Desktops </div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Chromebook</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>USBs</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>CAT5 Cables</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Water Purifiers</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Screenguards</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>All Appliances</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Landline Phones</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Chargers</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="container__list container__list-multi">-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Selfie Sticks</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Pendrives</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Keyboards</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Mouse</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Monitors</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Smart Glasses (VR)</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>iPods and MP3 Players</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Mobile Cables</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Memory Cards</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Power Banks</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Home Theatres</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div> Hand Blenders </div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Air Fryers</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Popup Toasters</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Coffee Makers</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Electric Cooker</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Vacuum Cleaners</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Fans</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Irons</div>-->
+<!--                        </div>-->
+<!--                        <div class="container__listItem">-->
+<!--                            <div>Landline Phones</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </ul>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#">Kids</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#">Men</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#">Baby</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#">Women</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#">Furniture</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="#">Decors</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+
+    <!-- End Navigation Bar -->
+
+
+
+
+        <div class="header-upper">
+            <div class="header-upper-container">
+                <div class="upper-container">
+                    <a class="logo-refer" href="" class="logo">
+                        <img src="assets/photo_2023-06-05_18-59-03.jpg" alt="" width="40" height="32">
+                        <p class="logotitle"><b>Cherry</b></p>
+                    </a>
+                </div>
+                <div class="burger-container">
+                    <a id="burger-icon-button">
+                        <img src="assets/red-vertical-more-symbol-three-dots-18351.svg" width="24" height="24"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
     <div class="header-bottom">
-        <div class="container">
+        <div class="header-container">
             <div class="menu-group-upper">
-                <a class="menu-item" href="">about cherry</a>
-                <a class="menu-item" href="">business areas</a>
-                <div class="subnav">
-                    <a class="menu-item submenu" href="">corporate govenance</a>
-                    <div class="subnav-content">
-                        <div class="container">
-                            <a class="menu-item menu-red" href="">corporate govenance</a>
-                            <div class="menu-column">
-                                <a href="" class="column-item">General Meeting</a>
-                                <a href="" class="column-item">Annual General Meeting 2017</a>
-                                <a href="" class="column-item">Nomination committee</a>
+
+                <a class="menu-item" href=""><b>ABOUT CHERRY</b></a>
+                <a class="menu-item" href=""><b>BUSINESS AREAS</b></a>
+
+                <div class="dropdown">
+                    <button class="dropbtn"><b>CORPORATE GOVERNANCE</b>
+                    </button>
+
+                    <div class="dropdown-content">
+                        <div class="drop-cont">
+                            <div class="menu-column left-col">
+                                <a href="" class="column-item"><h4 class="dropbtn-clr">CORPORATE GOVERNANCE</h4></a>
                             </div>
                             <div class="menu-column">
-                                <a href="" class="column-item">Boards of Directors</a>
+                                <a href="" class="column-item"><b>General Meeting</b></a>
+                                <a href="" class="column-item"><b>Annual General Meeting 2017</b></a>
+                                <a href="" class="column-item"><b>Nomination committee</b></a>
+                            </div>
+                            <div class="menu-column">
+                                <a href="" class="column-item"><b>Boards of Directors</b></a>
                                 <a href="" class="subitem">Work of the board</a>
                                 <a href="" class="subitem">Committees</a>
                                 <a href="" class="subitem">Remuneration of the board</a>
                             </div>
                             <div class="menu-column">
-                                <a href="" class="column-item">Management Team</a>
-                                <a href="" class="column-item">Auditors</a>
-                                <a href="" class="column-item">Remunerations</a>
-                                <a href="" class="column-item">Incentive programs</a>
+                                <a href="" class="column-item"><b>Management Team</b></a>
+                                <a href="" class="column-item"><b>Auditors</b></a>
+                                <a href="" class="column-item"><b>Remunerations</b></a>
+                                <a href="" class="column-item"><b>Incentive programs</b></a>
                             </div>
                             <div class="menu-column">
-                                <a href="" class="column-item">Internal control</a>
-                                <a href="" class="column-item">Minutes General Meeting</a>
-                                <a href="" class="column-item">Articles of Association</a>
+                                <a href="" class="column-item"><b>Internal control</b></a>
+                                <a href="" class="column-item"><b>Minutes General Meeting</b></a>
+                                <a href="" class="column-item"><b>Articles of Association</b></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="menu-item" href="">investors</a>
-                <a class="menu-item" href="">media</a>
-                <a class="menu-item" href="">career</a>
-                <a class="menu-item" href="">contact</a>
+
+
+                <a class="menu-item" href=""><b>INVESTORS</b></a>
+                <a class="menu-item" href=""><b>MEDIA</b></a>
+                <a class="menu-item" href=""><b>CAREER</b></a>
+                <a class="menu-item" href=""><b>CONTACT</b></a>
             </div>
             <div class="items-right">
-                <h4 class="red">CHER B: 59.50sek +1.</h4>
-                <div class="dropdown lang-switch">
-                    <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <p>ENG</p><img src="assets/arrow-down-white.svg" alt="">
-                    </a>
+                <h5 class="right-item dropbtn-clr">CHER B: 59.50sek <br> +1.75</h5>
 
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">ENG</a>
-                        <a class="dropdown-item" href="#">SWE</a>
+
+                <div class="language-picker js-language-picker " data-trigger-class="li4-btn li4-btn--subtle js-tab-focus">
+                    <form action="" class="language-picker__form">
+                        <select name="language-picker-select" class="dropdown-toggle-lng" id="language-picker-select">
+                            <option lang="eng" value="english" selected>ENG</option>
+                            <option lang="swe" value="swedish">SWE</option>
+                        </select>
+                    </form>
+                </div>
+
+                <div class="search-dropdown-icon">
+                    <a id="search-button">
+                        <i class="fa fa-search right-item" style="font-size:24px;color:#D41217"></i>
+                    </a>
+                    <div id="search-dropdown" class="search-dropdown">
+                        <div class="search-dropdown-container">
+                            <input type="text" id="search-input" class="search-input" placeholder="Lorem ipsum Dolor....">
+                            <button id="search-submit" class="search-submit">Search</button>
+                        </div>
                     </div>
                 </div>
-                <div class="search">
-                    <a class="search-icon">
-                        <img src="assets/search-icon.svg" alt="">
-                        <img src="assets/search-white.svg" alt="" class="white">
-                    </a>
-                </div>
+
+
+
+                <script>
+                    document.getElementById('search-button').addEventListener('click', function() {
+                        let div2 = document.getElementById('search-dropdown');
+                        if(div2.style.display === 'block'){
+                            div2.style.display = 'none';
+                        } else {
+                            div2.style.display = 'block';
+                        }
+                    });
+
+                    document.getElementById('search-close').addEventListener('click', function() {
+                        console.log("close")
+                        let div2 = document.getElementById('search-dropdown');
+                        div2.style.display = 'none';
+                    });
+                </script>
+
+
+
             </div>
             <div class="burger mobile">
                 <a href="" class="burger-icon"></a>
@@ -164,37 +516,37 @@
             <div class="search-bar">
                 <input type="text" class="textbar" id="site-search" name="q"
                        placeholder="Lorem Ipsum Dolor">
-                <a href="" class="btn-red">Search</a>
+                <button href="" class="btn-red">Search</button>
             </div>
         </div>
     </div>
 </header>
+
+
+
+
+
+
+
+
 <div class="hero">
     <div class="hero-items">
-        <div style="position: relative">
-            <img src="images/hero.png" alt="">
-            <h2 class="text-overlay">Lorem ipsum dolor sit amet</h2>
+        <div class="hero-title">
+            <h2 class="text-overlay">Lorem ipsum <br> dolor sit amet</h2>
         </div>
         <div>
-            <a class="video-btn" data-fancybox href="https://www.youtube.com/embed/EngW7tLk6R8">
-                <div style="position: relative">
-                    <img src="images/hero.png" alt="">
-                    <img class="playbtn" src="assets/play-button.svg" alt="">
-                </div>
-            </a>
+
         </div>
         <div>
-            <div class="video-wrapper">
-                <iframe class="embed-player" src="https://www.youtube.com/embed/EngW7tLk6R8?controls=0&mute=1&autoplay=1&loop=1&playlist=EngW7tLk6R8" allow="autoplay" autoplay; muted; modestbranding;></iframe>
-            </div>
+
         </div>
     </div>
 </div>
 <main>
     <section>
         <div class="cols-4 wrapper">
-            <div class="row">
-                <div class="col-lg-3 RestaurangCasino">
+            <div class="section-row">
+                <div class="aloha col-lg-3 RestaurangCasino">
                     <h5>Pressreleases</h5>
                     <div class="group">
                         <p class="small">July 10, 2017</p>
@@ -216,7 +568,7 @@
                         Lorem ipsum
                     </a>
                 </div>
-                <div class="col-lg-3 Yggdrasil">
+                <div class="aloha col-lg-3 Yggdrasil">
                     <h5>Calendar</h5>
                     <div class="group">
                         <p class="small">July 10, 2017</p>
@@ -238,7 +590,7 @@
                         Lorem ipsum
                     </a>
                 </div>
-                <div class="col-lg-3 ComeOn">
+                <div class="aloha col-lg-3 ComeOn">
                     <h5>Cherry Interrim Report</h5>
                     <p>Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod. </p>
                     <div class="group">
@@ -261,7 +613,7 @@
                         Lorem ipsum
                     </a>
                 </div>
-                <div class="col-lg-3 Cherry">
+                <div class="aloha col-lg-3 Cherry">
                     <h5></h5>
                     <div class="group">
                         <h3>The Share</h3>
@@ -449,7 +801,18 @@
     </div>
 </footer>
 
+
+<script>
+    document.getElementById("burger-icon-button").addEventListener('click', function (){
+        let mobileMenu = document.getElementById('mobile-menu');
+        if(mobileMenu.style.display === "block"){
+            mobileMenu.style.display = "none";
+        } else {
+            mobileMenu.style.display = "block";
+        }
+    })
+</script>
 <!-- scripts -->
-<script src="javascripts/main.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
