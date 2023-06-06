@@ -62,8 +62,14 @@ body{
     width: 380px;
 }
 
+
+.logo-refer img{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 .menu-group-upper{
-    background: rgba(255, 255, 255, 0.9);
+    height: 52px;
 }
 
 .menu-group-upper a{
@@ -173,7 +179,7 @@ body{
     justify-content: center;
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
-    min-height: 240px;
+    min-height: 200px;
     left: 0;
     z-index: 1;
 }
@@ -261,15 +267,10 @@ body{
     display: inline-block;
 }
 
-
-
-.mob-menu{
-}
-
 .hero{
     width: 100%;
     height: 82vh;
-    background: url("assets/hero.jpg");
+    background: url("assets/hero.png");
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -282,7 +283,7 @@ section{
 }
 
 .hero-title{
-    color: red;
+    color: white;
     font-size: 80px;
 }
 
@@ -292,14 +293,59 @@ section{
 }
 .aloha{
     width: 25%;
-    border: 1px solid black;
     padding-bottom: 40px;
+    color: white;
+}
+.section-row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
+.Yggdrasil{
+    background: #F39332E5;
+}
+.ComeOn{
+    background: #8DB524E5;
+}
+
+.Cherry{
+    background: #D41217E5;
+
+}
+
+.btn-white{
+    width: 298px;
+    height: 32px;
+    border-radius: 4px;
+    background: white;
+    border: none;
+}
+
+.restCasinobtn{
+    color: #8961A6E5;
+}
+.cherrybtn{
+    color: #D41217E5;
+}
+
+.comeonbtn{
+    color: #8DB524E5;
+}
+
+
 .section-row{
-    width: 1440px;
+    width: 100%;
     display: flex;
     grid-template-columns: auto auto auto auto;
+}
+.Yggdrasilbtn{
+    color: #F39332E5;
+}
+
+.RestaurangCasino{
+    background: #8961A6E5;
+
 }
 
 
@@ -308,9 +354,17 @@ section{
     height: 406px;
     display: inline-flex;
 }
+
+.fullwidth1 h3{
+    color: #D41217;
+    font-size: 40px;
+}
+
+.fullwidth1 a{
+    margin-top: 30px;
+}
 .text1{
     width: 70%;
-    border: 1px solid black;
     padding: 0 80px;
     text-align: start;
 }
@@ -320,7 +374,6 @@ section{
 
 .image1{
     width: 30%;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,39 +381,161 @@ section{
 
 .roww{
     width: 100%;
+    margin: 0 auto;
     height: 406px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid black;
+}
+
+.roww img{
+    width: 100%;
+    height: 406px;
 }
 
 .half-col{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+}
+
+.gamingblock{
+    background: rgba(141, 181, 36, 0.2);
+}
+
+.gamingblock h2{
+    color: #8DB524;
+    font-size: 40px;
+}
+
+.text{
+    width: 640px;
+}
+
+.text b{
+    width: 640px;
+    height: 224px;
+}
+
+.restikblock{
+    background: rgba(137, 97, 166, 0.2);
+}
+
+.restikblock h2{
+    color: #8961A6;
+    font-size: 40px;
+}
+
+.restikblock b{
+    color: #8961A6;
+}
+
+.img-col{
+    background-size: 100%;
+}
+
+.yggdbox{
+    background: rgba(243, 147, 50, 0.2);
+}
+
+.yggdbox h2{
+    color: #F39332;
+}
+
+.yggdbox b{
+    color: #F39332;
+}
+
+.gameloungebox{
+    background: rgba(65, 191, 237, 0.2);
+}
+
+.gameloungebox h2{
+    color: #41BFED;
+}
+.gameloungebox b{
+    color: #41BFED;
+}
+
+.greydarkbox{
+    background: #E7E8E8;
+}
+
+.greydarkbox h2{
+    color: #4A4A4A;
+}
+.greydarkbox b{
+    color: #4A4A4A;
+}
+
+.cherrybox{
+    background: rgba(212, 18, 23, 0.2);
+}
+
+.cherrybox h2{
+    color: #D41217;
+}
+.cherrybox b{
+    color: #D41217;
+}
+
+.GameLounge{
+    background: #41BFED;
+}
+.GreyDark{
+    background: #4A4A4A;
 }
 
 .share-row{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 76px;
 }
-.social{
-    border: 1px solid black;
+
+.socials h4{
+    font-size: 24px;
+    color: #D41217;
+}
+
+.share-row img{
+    width: 32px;
+    height: 32px;
+}
+
+.share-row a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background: rgba(212, 18, 23, 0.05);
+}
+
+.footer-logo{
+    padding: 45px 0;
+
+}
+
+.logo-refer img{
+    display: flex;
+    justify-content: center;
 }
 
 .footer-row{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 300px;
     text-align-last: center;
+    margin: 0 50px;
 }
 
 .footer-column{
     display: grid;
+    place-items: flex-start;
 }
 
 .menu-item{
     text-decoration: none;
     color: #D41217;
+    margin-bottom: 20px;
 }
 .menu-item-s{
     text-decoration: none;
@@ -369,13 +544,25 @@ section{
 
 .text-center{
     width: 100%;
+    padding-top: 16px;
+    padding-bottom: 50px;
+}
+
+.footer-row{
+    border-top: 2px solid #D41217;
+    border-bottom: 2px solid #D41217;
+    padding: 30px;
 }
 
 .footer-text{
     width: 1440px;
     display: contents;
     text-align: center;
-    border-top: 2px solid #D41217;
+}
+
+.links a{
+    text-decoration: none;
+    color: #D41217;
 }
 ----------------------------MOBILE---------------------------------------------
 
@@ -422,6 +609,9 @@ section{
     .cookie-container{
         width: 1200px;
     }
+    .fullwidth1{
+        height: 50vh;
+    }
 }
 
 
@@ -449,6 +639,36 @@ section{
     }
     .cookie-container{
         width: 1050px;
+    }
+    /*.cols-4{*/
+    /*    width: 100%;*/
+    /*    margin: 0 auto;*/
+    /*}*/
+    .aloha{
+        width: 100%;
+        background-size: 100%;
+    }
+    .section-row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 400px 300px;
+    }
+    .hero-title h2{
+        font-size: 72px;
+    }
+    .roww{
+        width: 100%;
+        margin: 0 auto;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .half-col{
+        height: 300px;
+    }
+    .text b{
+        width: 800px;
     }
 }
 
@@ -487,6 +707,13 @@ section{
     }
     .search-bar{
         display: none;
+    }
+    .footer-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        text-align-last: center;
+        margin: 0 50px;
     }
 }
 
@@ -537,6 +764,17 @@ section{
         width: 100%;
         height: 150px;
     }
+    .footer-row{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 300px;
+        text-align-last: center;
+        margin: 0 50px;
+    }
+    .footer-column{
+        display: grid;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 550px) {
@@ -583,5 +821,10 @@ section{
     }
     .search-bar{
         display: none;
+    }
+    .share-row{
+        display: grid;
+        grid-template-columns: 100%;
+        height: 106px;
     }
 }
